@@ -2,15 +2,10 @@
 from flask import Flask, render_template, request
 import numpy as np
 import pickle
-
-
 # pickle loading
 model = pickle.load(open('house_prise.pkl', 'rb'))
-
 # creating app
 app = Flask(__name__)
-
- 
 @app.route('/')
 def man():
     return render_template('home.html')
