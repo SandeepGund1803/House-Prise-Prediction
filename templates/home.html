@@ -1,0 +1,23 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> HOUSE PRISE PREDICTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> waterfront :  <input type="text", name='waterfront', placeholder="enter value"> <br><br>
+            view :  <input type="text", name='view', placeholder="enter value"> <br><br>
+            grade :  <input type="text", name='grade', placeholder="enter value"> <br><br>
+            zipcode : <input type="text", name='zipcode', placeholder="enter value"> <br><br>
+            lat : <input type="text", name='lat', placeholder="enter value"> <br><br>
+            longi : <input type="text", name='longi', placeholder="enter value"> <br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+
+
+    </center>
+
+    </body>
+</html>
